@@ -13,15 +13,36 @@ background: linear-gradient (135deg,#667eea 0%,#764ba2 100%);
 .stats-container .stats-grid:nth-child(3):nth-child(3) .stat-number,
 .stats-container .stats-gridinth-Play d(3) . stat-label E
 17
-color:
 white;
 }
 
 /* SOLUZIONE 3: Effetto hover sulle stat cards */
 .stats-grid {
-    transition:transform 0.35 ease;
-    box-shadow 0.3s ease;
+    transition: transform 0.35 ease;
+    box-shadow: 0.3s ease;
 }
+
+/* Soluzione 4: Evidenzia il secondo piano allenamento */
+.workout-plan:nth-child(3) {
+    border-left:  5px solid goldenrod; 
+    background-color: #fff8ba; 
+}
+
+/* SOLUZIONE 5: Bordi verdi per primo e ultimo esercizio  */
+.exercise-item:first-child
+.exercise-item:last-child {
+    border-left-color:green;
+    background-color: #f0fff4; 
+}
+
+/* SOLUZIONE 6: Icona fulmine negli esercizi pari  */
+
+
+
+
+
+
+
 
 
 
