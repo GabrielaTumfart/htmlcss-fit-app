@@ -11,20 +11,20 @@ margin-bottom: 10px;
 background: linear-gradient (135deg,#667eea 0%,#764ba2 100%);
 color: white; 
 }
-.stats-container 
-.stats-grid:nth-child(3):nth-child(3) 
-.stat-number,
-.stats-container 
-.stats-gridi:nth-child(3) 
-.stat-label {
+.stats-container .stats-grid:nth-child(3):nth-child(3) .stat-number,
+.stats-container .stats-gridi:nth-child(3) .stat-label {
     color: white;
-
 }
 
 /* SOLUZIONE 3: ✨ Effetto hover sulle stat cards */
 .stats-grid {
-    transition: transform 0.35 ease;
-    box-shadow: 0.3s ease;
+    transition: translate 0.35 ease, box-shadow: 0.3s ease;
+}
+
+/* Bonus: transform: translateY(-5px); */
+.stats-grid:hover {
+    translate: 0 -5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Soluzione 4: 📌 Evidenzia il secondo piano allenamento */
@@ -109,6 +109,8 @@ color: white;
     font-size: 3rem;
     opacity: 0.3;
 }
+
+
 
 
 
