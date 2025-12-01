@@ -34,7 +34,7 @@ color: white;
 }
 
 /* SOLUZIONE 5: 🟢 Bordi verdi per primo e ultimo esercizio  */
-.exercise-item:first-child
+.exercise-item:first-child,
 .exercise-item:last-child {
     border-left-color: #2ecc71;
     background-color: #f0fff4; 
