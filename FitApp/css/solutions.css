@@ -1,6 +1,6 @@
 /* SOLUZIONE 1: 🔥 Icona fuoco nella prima stat card */
 .stats-grid:first-child::before {
-content: 🔥;
+content: '🔥';
 display: block;
 font-size: 2rem;
 margin-bottom: 10px;
@@ -8,11 +8,11 @@ margin-bottom: 10px;
 
 /* SOLUZIONE 2: 🌟  Evidenziare la terza stat card */
 .stats-container .stats-grid:nth-child(3) {
-background: linear-gradient (135deg,#667eea 0%,#764ba2 100%);
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 color: white; 
 }
-.stats-container .stats-grid:nth-child(3):nth-child(3) .stat-number,
-.stats-container .stats-gridi:nth-child(3) .stat-label {
+.stats-container .stats-grid:nth-child(3) .stat-number,
+.stats-container .stats-grid:nth-child(3) .stat-label {
     color: white;
 }
 
