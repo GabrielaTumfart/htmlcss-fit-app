@@ -46,7 +46,11 @@ color: white;
     margin-right: 8px;
     color: #f39c12;
 }
-
+.exercise-item:nth-child(even)
+.exercise-name::before {
+    content: '⚡️';
+    color: #f39c12;
+}
 
 /* Soluzioni 7 e 8: 🎯 Focus sui campi input */
 .goal-input-group input:focus,
