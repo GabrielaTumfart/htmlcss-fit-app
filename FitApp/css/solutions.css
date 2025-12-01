@@ -1,4 +1,4 @@
-/* SOLUZIONE 1: Icona fuoco nella prima stat card */
+/* SOLUZIONE 1: 🔥 Icona fuoco nella prima stat card */
 .stats-grid:first-child::before {
 content: 🔥;
 display: block;
@@ -6,36 +6,69 @@ font-size: 2rem;
 margin-bottom: 10px;
 }
 
-/* SOLUZIONE 2: Evidenziare la terza stat card */
+/* SOLUZIONE 2: 🌟  Evidenziare la terza stat card */
 .stats-container .stats-grid:nth-child(3) {
 background: linear-gradient (135deg,#667eea 0%,#764ba2 100%);
-/* color: white; */
-.stats-container .stats-grid:nth-child(3):nth-child(3) .stat-number,
-.stats-container .stats-gridinth-Play d(3) . stat-label E
-17
-white;
+color: white; 
+}
+.stats-container 
+.stats-grid:nth-child(3):nth-child(3) 
+.stat-number,
+.stats-container 
+.stats-gridi:nth-child(3) 
+.stat-label {
+    color: white;
+
 }
 
-/* SOLUZIONE 3: Effetto hover sulle stat cards */
+/* SOLUZIONE 3: ✨ Effetto hover sulle stat cards */
 .stats-grid {
     transition: transform 0.35 ease;
     box-shadow: 0.3s ease;
 }
 
-/* Soluzione 4: Evidenzia il secondo piano allenamento */
+/* Soluzione 4: 📌 Evidenzia il secondo piano allenamento */
 .workout-plan:nth-child(3) {
     border-left:  5px solid goldenrod; 
     background-color: #fff8ba; 
 }
 
-/* SOLUZIONE 5: Bordi verdi per primo e ultimo esercizio  */
+/* SOLUZIONE 5: 🟢 Bordi verdi per primo e ultimo esercizio  */
 .exercise-item:first-child
 .exercise-item:last-child {
     border-left-color:green;
     background-color: #f0fff4; 
 }
 
-/* SOLUZIONE 6: Icona fulmine negli esercizi pari  */
+/* SOLUZIONE 6: ⚡️ Icona fulmine negli esercizi pari  */
+.exercise-item:nth-child(even)::before {
+    content: ⚡️;
+    margin-right: 8px;
+    color: #f39c12;
+}
+.exercise-item:nth-child(even)
+.exercise-name::before {
+    content: 'ci si può scrivere';
+    color: #f39c12;
+}
+
+/* Soluzioni 7 e 8: 🎯 Focus sui campi input */
+.goal-input-group input:focus,
+.goal-input-group select:focus {
+    outline:none;
+    border-color:#667eea;
+    box-shadow:008px rgba(102, 126,234, 0.3);
+}
+
+/* Soluzione 9: 🔘 Miglioramenti al button */
+.save-btn:hover {
+    background-color: #5a67d8;
+    translate:2px;
+    box-shadow:0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Soluzione 10: 📊 Percentuale nella barra di progresso */
+
 
 
 
