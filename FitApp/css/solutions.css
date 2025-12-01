@@ -36,7 +36,7 @@ color: white;
 /* SOLUZIONE 5: 🟢 Bordi verdi per primo e ultimo esercizio  */
 .exercise-item:first-child
 .exercise-item:last-child {
-    border-left-color:green;
+    border-left-color: #2ecc71;
     background-color: #f0fff4; 
 }
 
@@ -52,19 +52,29 @@ color: white;
     color: #f39c12;
 }
 
-/* Soluzioni 7 e 8: 🎯 Focus sui campi input */
+/* Soluzioni 7 🎯 Transition per focus */
+.goal-input-group input:focus,
+.goal-input-group select {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Soluzioni 8: 🎯 Focus sui campi input */
 .goal-input-group input:focus,
 .goal-input-group select:focus {
-    outline:none;
-    border-color:#667eea;
-    box-shadow:008px rgba(102, 126,234, 0.3);
+    outline: none;
+    border-color: #667eea;
+    box-shadow:0 0 8px rgba(102, 126,234, 0.3);
 }
 
 /* Soluzione 9: 🔘 Miglioramenti al button */
+.save-btn {
+    transition: background-color 0.3s ease, translate 0.3s ease, box-shadow 0.3s ease;
+}
+
 .save-btn:hover {
     background-color: #5a67d8;
-    translate:2px;
-    box-shadow:0 5px 15px rgba(102, 126, 234, 0.4);
+    translate: 0 -2px;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 /* Soluzione 10: 📊 Percentuale nella barra di progresso */
@@ -77,6 +87,7 @@ color: white;
     color: white;
     font-size: 0.7rem;
     font-weight: bold;
+    background-color: #5a67d8;
 }
 
 /* Soluzione 11 e 12: 🧭 Migliorie alla navigazione */
