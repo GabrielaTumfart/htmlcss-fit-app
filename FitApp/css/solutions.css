@@ -68,6 +68,48 @@ color: white;
 }
 
 /* Soluzione 10: 📊 Percentuale nella barra di progresso */
+.progress-fill::after {
+    content: '65%';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* Soluzione 11 e 12: 🧭 Migliorie alla navigazione */
+/* Hover sui link di navigazione */
+.nav-item:hover {
+    background: #344495;
+    color: #667eea;
+}
+/* Primo link nav attivo */
+.nav-item:first-child {
+    background: #34495e;
+    color: #aab9fa;
+}
+
+/* Soluzione 13: 💭 Virgolette alla citazione */
+.quote-box::before {
+    content: '"';
+    position:relative;
+    top: 5px;
+    left: 10px;
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.quote-box::after {
+    content: '"';
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
 
 
 
