@@ -18,7 +18,7 @@ color: white;
 
 /* SOLUZIONE 3: ✨ Effetto hover sulle stat cards */
 .stats-grid {
-    transition: translate 0.35 ease, box-shadow: 0.3s ease;
+    transition: translate 0.35 ease, box-shadow 0.3s ease;
 }
 
 /* Bonus: transform: translateY(-5px); */
@@ -46,11 +46,7 @@ color: white;
     margin-right: 8px;
     color: #f39c12;
 }
-.exercise-item:nth-child(even)
-.exercise-name::before {
-    content: 'ci si può scrivere';
-    color: #f39c12;
-}
+
 
 /* Soluzioni 7 e 8: 🎯 Focus sui campi input */
 .goal-input-group input:focus,
